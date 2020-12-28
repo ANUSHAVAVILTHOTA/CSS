@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Using Deg</title>
+	<style type="text/css">
+		/* 0 deg like top 
+		/* 0 45 90 180 -------365.....negative values also
+		it means it will starts from bottom */
+		#g1{
+			height: 200px;
+			background-image: linear-gradient(0deg,red,yellow,blue,green);
+		}
+		/*it means it will starts from left */
+		#g2{
+			height: 200px;
+			background-image: linear-gradient(90deg,red,yellow);
+
+		}
+		/*it means it will starts from top */
+		#g3{
+			height: 200px;
+			background-image: linear-gradient(180deg,red,yellow);
+
+		}
+		/*it means it will starts from right */
+		#g4{
+			height: 200px;
+			background-image: linear-gradient(-90deg,red,yellow);
+
+		}
+		/*it means it will starts from right towards corner  */
+		#g5{
+			height: 200px;
+			background-image: linear-gradient(200deg,red,yellow);
+		}
+	</style>
+</head>
+<body>
+<div id="g1">0DEG</div><br><br>
+<div id="g2">90DEG</div><br><br>
+<div id="g3">180DEG</div><br><br>
+<div id="g4">-90DEG</div><br><br>
+<div id="g5">200DEG</div><br><br>
+</body>
+</html>

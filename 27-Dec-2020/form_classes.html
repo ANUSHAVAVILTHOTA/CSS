@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classes</title>
+	<style type="text/css">
+		input:optional{
+			background-color: yellow;
+		}
+		input:required{
+			background-color: purple;
+		}
+		input:out-of-range{
+			border:3px solid red;
+		}
+		input:read-only{
+			background-color: green;
+		}
+        /*input:read-write{
+        	background-color: yellow;
+        }*/
+        input:disabled{
+        	background-color: red;
+        }
+        input:valid{
+        	background-color: blue;
+        }
+         input:invalid{
+        	background-color: red;
+        }
+	</style>
+</head>
+<body>
+<form>
+	First Name<input type="text" name=""><br><br>
+	Last Name<input type="text" name=""><br><br>
+	Company Name <input type="text" name="" required><br><br>
+	Enter a number<input type="number" min="10" max="20" name=""><br><br>
+
+	Country<input type="text" name="" readonly value="India"> <br><br>
+    Country<input type="text" name="" disabled="disabled" value="India"> <br><br>
+
+    Email<input type="email" name=""><br><br>
+	
+	<!-- <input type="submit" name=""> -->
+</form>
+</body>
+</html>

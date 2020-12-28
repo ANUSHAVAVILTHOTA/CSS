@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Gradients</title>
+	<style type="text/css">
+		/* default action*/
+		#hello{
+			height: 300px;
+			/*background-color: blue;*/
+			background-image: linear-gradient(yellow,red,purple,blue);
+		}
+		/* to left means it will start from right to  left*/
+		#g1{
+			height: 300px;
+			background-image: linear-gradient(to left,red,yellow,blue,purple);
+		}
+		/* to right means it will start from left to  right*/
+		#g2{
+			height: 300px;
+			background-image: linear-gradient(to right,red,yellow,blue);
+		}
+		/*it will starts from top ----bottom */
+		#g3{
+			height: 300px;
+			background-image: linear-gradient(to bottom,red,yellow,blue);
+		}
+		/* it will starts from bottom to top*/
+		.g4{
+			height: 300px;
+			background-image: linear-gradient(to top,red 30%,yellow 60%,blue 30%);
+		}
+	</style>
+</head>
+<body>
+
+<div id="hello" style="text-align: center;font-size: 30px;padding-top: 150px;">Hii Hello</div>
+<br><br>
+<div id="g1"></div>
+<br><br>
+<div id="g2"></div>
+<br><br>
+<div id="g3"></div>
+<br><br>
+<div class="g4"></div>
+
+
+</body>
+</html>
