@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input:focus {
+  background-color: yellow;
+}
+input:invalid {
+  border: 2px solid red;
+}
+:not(p) {
+  color: purple;
+  font-size: 30px;
+}
+input:optional {
+  background-color: yellow;
+}
+input:out-of-range {
+  border: 2px solid red;
+}
+input:read-only {
+  background-color: green;
+}
+/*input:read-write {
+  background-color: purple;
+}*/
+</style>
+</head>
+<body>
+
+<form action="">
+  <form>
+  First name: <input type="text" name="firstname" required><br><br>
+  Last name: <input type="text" name="lastname" required><br><br>
+  <input type="email" value="supportEmail" required><br><br>
+
+  <p>An optional input element:<br><input type="text" name=""></p>
+
+  <input type="number" min="5" max="10" value="17"><br><br>
+  
+  <p>A readonly input element:<br><input readonly value="hello" required ></p>
+  
+  </form>
+
+</form>
+
+
+
+</body>
+</html>
