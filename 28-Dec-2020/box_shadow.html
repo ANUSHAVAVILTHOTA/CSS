@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Shadow</title>
+	<style type="text/css">
+		div{
+			text-align: center;
+			font-size: 30px;
+			padding-top: 100px;
+			color: white;
+		}
+		.def{
+			width: 300px;
+			height: 200px;
+			background-color: purple;
+			box-shadow: 10px 10px;
+		}
+		.d1{
+			width: 300px;
+			height: 200px;
+			background-color: purple;
+			text-shadow:2px 2px 2px #aaa;
+			box-shadow: 10px 10px green;
+		}
+		.d2{
+			width: 300px;
+			height: 200px;
+			background-color: purple;
+			box-shadow: 10px 10px 5px green;
+		}
+		/* top left,top right,bottom right,bottom left*/
+		.tl{
+			border-radius: 50px 0px 0px 0px;
+			background-color: purple;
+			width: 200px;
+			height: 150px;
+
+		}
+		.tr{
+			border-radius: 0px 50px 2px 0px;
+			background-color: purple;
+			width: 200px;
+			height: 150px;
+
+		}
+		.br{
+			border-radius: 0px 0px 50px 0px;
+			background-color: purple;
+			width: 200px;
+			height: 150px;
+
+		}
+		.bl{
+			border-radius: 0px 0px 0px 50px;
+			background-color: purple;
+			width: 200px;
+			height: 150px;
+
+		}
+	</style>
+</head>
+<body>
+<div class="def">This is box shadow</div><br><br>
+<div class="d1">This is box shadow</div><br><br>
+<div class="d2">This is box shadow</div><br><br>
+<div class="tl">Top Left</div><br><br>
+<div class="tr">Top Right</div><br><br>
+<div class="br">Bottom Right</div><br><br>
+<div class="bl">Botom Left</div><br><br>
+</body>
+</html>
