@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			animation-name: kp;
+			animation-duration: 7s;
+			animation-delay: 5s;
+		}
+		/*@keyframes kp{
+			from{ background-color: purple; }
+			to{background-color: yellow;}
+		}*/
+		@keyframes kp{
+			0%{background-color: purple;}
+			25%{background-color: yellow;border-radius: 50%;}
+			50%{background-color: blue;}
+			60%{background-color: green;}
+			100%{background-color: orange;}
+		}
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
