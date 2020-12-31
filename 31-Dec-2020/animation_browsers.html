@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animatiom</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 70px;
+			background-color: purple;
+			position: relative;
+			-webkit-animation: mode 5s;/* Chrome and Safari*/
+			-moz-animation: mode 5s;/*Firefox */
+			-ms-animation:mode 5s; /* Internet Explorer */
+			-o-animation:mode 5s;/*opera*/
+			
+		}
+		@-webkit-keyframes mode{
+			from{
+				top: 0px;
+				background-color: yellow;
+
+			}
+			to{
+				top: 200px;
+				background-color: green;
+			}
+		} 
+		@-moz-keyframes mode{
+			from{
+				top: 0px;
+				background-color: yellow;
+
+			}
+			to{
+				top: 200px;
+				background-color:blue;
+			}
+		} 
+		@-ms-keyframes mode{
+			from{
+				top: 0px;
+				background-color: yellow;
+
+			}
+			to{
+				top: 200px;
+				background-color: green;
+			}
+		}
+		@-o-keyframes mode{
+			from{
+				top: 0px;
+				background-color: yellow;
+
+			}
+			to{
+				top: 200px;
+				background-color: orange;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+<div></div>
+</body>
+</html>

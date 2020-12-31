@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 70px;
+			background-color: purple;
+			color: white;
+			font-size: 30px;
+			position: relative;
+			animation-name: time;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+		#d1{
+			/* slow start------ then fast------end slowly*/
+			animation-timing-function: linear;
+		}
+		#d2{
+			/* same speed from start to end*/
+			animation-timing-function: ease;
+		}
+		#d3{
+			/* slow start*/
+			animation-timing-function: ease-in;
+		}
+		#d4{
+			/* slow end*/
+			animation-timing-function: ease-out;
+		}
+		#d5{
+			/* slow start and  end*/
+			animation-timing-function: ease-in-out;
+		}
+		@keyframes time{
+			from{
+				left: 0px;
+
+			}
+			to{
+				left: 1000px;
+			}
+		}
+	</style>
+</head>
+<body>
+<div id="d1">Linear</div>
+<div id="d2">Ease</div>
+<div id="d3">Ease-in</div>
+<div id="d4">Ease-Out</div>
+<div id="d5">Ease-in-Out</div>
+</body>
+</html>
+
+

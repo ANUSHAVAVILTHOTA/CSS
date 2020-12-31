@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			animation-name: anu;
+			animation-duration: 4s;
+			/*normal  right bottom left top  ----forwards*/
+			/* reverse bottom right top left-----backwards*/
+			/* alternate   forwards---then ---backwards*/
+			/*alternate-reverse   backward -----then forword*/
+			animation-iteration-count: 2;
+			animation-direction: alternate-reverse;
+		}
+		@keyframes anu{
+			0%{
+				background-color: purple;
+				left: 0px;
+				top: 0px;
+			}
+			25%{
+				background-color: green;
+				left: 200px;
+				top: 0px;
+			}
+			55%{
+				background-color: yellow;
+				left: 200px;
+				top: 200px;
+			}
+			70%{
+				background-color: orange;
+				left: 0px;
+				top: 200px;
+			}
+			100%{
+				background-color: orange;
+				left: 0px;
+				top: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+ <div></div>
+</body>
+</html>

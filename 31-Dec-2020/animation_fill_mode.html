@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animatiom</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 70px;
+			background-color: purple;
+			position: relative;
+			animation-name: mode;
+			animation-duration: 5s;
+			/* forwards-------it will maintain last keyframe values    at the end of animation*/
+			
+			/* backwards --- first key frame values will be maintained in delay period(4s)    at the start of animation*/
+			/*both =====means it will maintain first key frame values in starting
+			last keyframe values in ending */
+			/* none--- nothing will happens in both starting and ending*/
+			/*animation-delay: 4s;*/
+			/*animation-fill-mode: both;*/
+			animation-play-state: paused;
+
+              /* padding-top: 
+               padding-left;
+               padding-bottom:
+               padding-right
+               padding: 2px 3px 4px 5px;*/
+			/*animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction; */
+			
+		}
+		@keyframes mode{
+			from{
+				top: 0px;
+				background-color: yellow;
+
+			}
+			to{
+				top: 200px;
+				background-color: green;
+			}
+		} 
+	</style>
+</head>
+<body>
+	<!--animation-name 
+		animation-duration 
+		animation-timing-function 
+		animation-delay 
+		animation-iteration-count 
+		animation-direction
+		animation-fill-mode
+		animation-play-state
+		create different animations for different browsers-->
+<div></div>
+</body>
+</html>
